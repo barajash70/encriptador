@@ -4,10 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Encriptador</title>
   </head>
+
+  
   <body>
-    <h1 class="text-black bg-blue-300 text-2xl ">Code With Ahsan</h1>
+    
+    <header>
+      <img class="h-8 w-12 ml-8 mt-6 " src="./assets/logo-alura.svg" alt="logo alura">
+      
+    </header>
+    
+    <main>
+      <section>
+        <textarea class="input-texto " cols="40" rows="6"placeholder="Ingrese aquí el texto"></textarea>
+        
+        <div id="animation"></div>
+        <button id="buttonPlay" class="bg-red-400" onclick="btnEncriptar()">Encriptar</button>
+        <button id="buttonStop" class="bg-slate-400 ml-24" onclick="btnDesencriptar()">Desemcriptar</button>
+       
+      </section>
+      <section class="flex flex-col">
+        <textarea class="mensaje bg-red-300" cols="18" rows="8"></textarea>
+        <button class="copiar bg-amber-300 " onclick="btnCopiar()">Copiar</button>
+      </section>
+
+        
+        
+        <!-- <h1 class="text-2xl h-48 ml-48 font-bold  text-blue">Ingresa aquí el texto que deseas encriptar</h1> -->
+
+      
+        <!-- <h2 class="text-2xl h-96 ml-48 flex justify-between font-bold text-blue">Solo letras minusculas y sin acentos</h2> -->
+      
+    </main>
+    
+    
+    
+    
+    
     <script src="./bundle.js"></script>
+   
   </body>
 </html>

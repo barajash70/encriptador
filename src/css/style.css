@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html,
+body {
+  background-color: rgb(233, 227, 227);
+
+}
+
+main {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+/* mensaje {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 90px;
+} */

@@ -1,10 +1,10 @@
-# TypeScript Webpack Tailwind CSS Starter
+<!-- # TypeScript Webpack Tailwind CSS Starter
 
 <div>
   <img src="./src/assets/meta.png">
 </div>
 
-Just like any regular day, I was working on something. This time during a Live Stream on [Twitch](https://twitch.tv/CodeWithAhsan) and [YouTube](https://youtube.com/c/CodeWithAhsan) when I couldn't find a great typescript + webpack starter template that's minimal, up to date, and works! So I created this one.
+
 
 ## Usage
 Clone the repository in your local machine. 
@@ -31,4 +31,4 @@ yarn build
 ```
 
 # License
-[MIT](LICENSE)
+[MIT](LICENSE) -->
