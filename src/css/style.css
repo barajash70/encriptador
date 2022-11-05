@@ -6,15 +6,17 @@
 
 html,
 body {
+
   background-color: rgb(233, 227, 227);
+
 
 }
 
-main {
+/* main {
   display: flex;
   margin-left: 10px;
   margin-bottom: 50px;
-}
+} */
 
 /* mensaje {
   position: relative;
