@@ -14,33 +14,24 @@
       <img class="h-8 w-10 ml-8 mt-10 " src="./assets/logo-alura.svg" alt="logo alura">  
     </header>
     
-    <main>
+    <main class="flex flex-col items-center">
      
-      <section class="flex mx-7 w-80 h-44"> 
-        <textarea class="input-texto text-blue text-center font-normal text-2xl leading-3  mt-8 pt-7 bg-transparent " cols="40" rows="6" placeholder="Ingrese aquí el texto"></textarea>
-      </section>
-
-      <section class="flex flex-wrap justify-evenly mt-6">
-        
-        <img class="w-3 h-3 ml-6 " src="./assets/Vector.svg" alt="vector">
-        <p class="font-normal text-xs leading-3 mr-20">Solo letras minusculas y sin acentos</p>
-        
-      </section>
-
-      <div class="bg-blue text-white font-normal text-base leading-4 flex flex-row justify-center w-80 h-12 mx-9 mt-1 rounded-3xl">
-        <button id="buttonPlay" onclick="btnEncriptar()">Encriptar</button>  
-      </div>
-      <div class="bg-transparent border-blue border-2 text-blue font-normal text-base leading-4 flex flex-row justify-center w-80 h-12 mx-9 mt-6 rounded-3xl">
-        <button id="buttonStop" onclick="btnDesencriptar()">Desemcriptar</button>
-      </div>
-
-      <section class=" bg-white w-80 h-64 mt-10 mb-3 mx-8 rounded-3xl shadow-2xl"> 
-        
-        <p class="pt-16 text-center font-bold text-2xl text-blue">Ningún mensaje fue encontrado</p>
+       
+      <textarea class="input-texto w-80 h-44 border-2 rounded-lg border-red-800 text-blue text-center font-normal text-2xl leading-3  mt-8 pt-7 bg-transparent " cols="40" rows="6" placeholder="Ingrese aquí el texto"></textarea>
       
+      <section class="flex flex-wrap justify-evenly mt-6">  
+        <img class="w-3 h-3 ml-6" src="./assets/Vector.svg" alt="vector">
+        <p class="text-blue font-normal text-xs leading-3 mr-20">Solo letras minusculas y sin acentos</p>
+      </section>
+  
+      <button id="buttonPlay" class="bg-red-500 shadow-sm shadow-black text-white font-bold text-lg leading-2 w-72 h-10 mx-16 mt-1 rounded-3xl" onclick="btnEncriptar()">Encriptar</button>    
       
-        <p class="pt-12 text-center font-normal text-base leading-7 text-red-900">Ingrese el texto que desees <br> encriptar o desencriptar</p>
-          
+      <button id="buttonStop" class="bg-transparent shadow-sm shadow-black text-red-500 font-bold text-lg leading-2 w-72 h-10 mx-16 mt-6 rounded-3xl" onclick="btnDesencriptar()">Desemcriptar</button>
+        
+      <section class="flex flex-col items-center bg-white w-80 h-80 mt-10 mb-3 mx-8 rounded-3xl shadow-2xl">   
+        <p class="pt-16 text-center font-bold text-2xl text-red-500">Ningún mensaje fue encontrado</p>
+        <p class="pt-12 text-center font-normal text-base leading-7 text-blue">Ingrese el texto que desees <br> encriptar o desencriptar</p>  
+        <button id="buttonCopy" class="bg-transparent shadow-sm shadow-black text-red-500 font-bold text-lg leading-2 w-52 h-10 mt-4 rounded-3xl " onclick="btnCopiar()">Copiar</button>      
       </section>
 
       
@@ -56,17 +47,6 @@
       
 
       
-      <!-- <section class="flex flex-col">
-        <textarea class="mensaje bg-red-300" cols="18" rows="8"></textarea>
-        <button class="copiar bg-amber-300 " onclick="btnCopiar()">Copiar</button>
-      </section> -->
-
-        
-        
-        <!-- <h1 class="text-2xl h-48 ml-48 font-bold  text-blue">Ingresa aquí el texto que deseas encriptar</h1> -->
-
-      
-        <!-- <h2 class="text-2xl h-96 ml-48 flex justify-between font-bold text-blue">Solo letras minusculas y sin acentos</h2> -->
       
     </main>
     
