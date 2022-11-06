@@ -17,29 +17,33 @@
     <main class="flex flex-col items-center">
      
        
-      <textarea class="input-texto w-80 h-44 border-2 rounded-lg border-red-800 text-blue text-center font-normal text-2xl leading-3  mt-8 pt-7 bg-transparent " cols="40" rows="6" placeholder="Ingrese aquí el texto"></textarea>
+      <textarea class="input-texto w-80 h-44  border-red-800 text-blue text-center font-normal text-2xl leading-3  mt-8 pt-7 bg-transparent " cols="40" rows="6" placeholder="Ingrese aquí el texto"></textarea>
+      
       
       <section class="flex flex-wrap justify-evenly mt-6">  
         <img class="w-3 h-3 ml-6" src="./assets/Vector.svg" alt="vector">
         <p class="text-blue font-normal text-xs leading-3 mr-20">Solo letras minusculas y sin acentos</p>
       </section>
   
-      <button id="buttonPlay" class="bg-red-500 shadow-sm shadow-black text-white font-bold text-lg leading-2 w-72 h-10 mx-16 mt-1 rounded-3xl" onclick="btnEncriptar()">Encriptar</button>    
       
-      <button id="buttonStop" class="bg-transparent shadow-sm shadow-black text-red-500 font-bold text-lg leading-2 w-72 h-10 mx-16 mt-6 rounded-3xl" onclick="btnDesencriptar()">Desemcriptar</button>
+      <button id="buttonEncriptar" class="bg-red-500 shadow-sm shadow-black text-white font-bold text-lg leading-2 w-72 h-10 mx-16 mt-1 rounded-3xl">Encriptar</button>    
+      
+      
+      <button id="buttonDesencriptar" class="bg-transparent shadow-sm shadow-black text-red-500 font-bold text-lg leading-2 w-72 h-10 mx-16 mt-6 rounded-3xl">Desemcriptar</button>
         
-      <section class="flex flex-col items-center bg-white w-80 h-80 mt-10 mb-3 mx-8 rounded-3xl shadow-2xl">   
-        <p class="pt-16 text-center font-bold text-2xl text-red-500">Ningún mensaje fue encontrado</p>
-        <p class="pt-12 text-center font-normal text-base leading-7 text-blue">Ingrese el texto que desees <br> encriptar o desencriptar</p>  
-        <button id="buttonCopy" class="bg-transparent shadow-sm shadow-black text-red-500 font-bold text-lg leading-2 w-52 h-10 mt-4 rounded-3xl " onclick="btnCopiar()">Copiar</button>      
+     
+      <section class="texto-Desencriptar flex flex-col items-center bg-white w-80 h-80 mt-10 mb-3 mx-8 rounded-3xl shadow-2xl">   
+        <p id="mensaje" class="pt-16 text-center font-bold text-2xl text-red-500">Ningún mensaje fue encontrado</p>
+        <p id="texto" class="pt-12 text-center font-normal text-base leading-7 text-blue">Ingrese el texto que desees <br> encriptar o desencriptar</p>  
+        <button id="buttonCopy" class="bg-transparent shadow-sm shadow-black text-red-500 font-bold text-lg leading-2 w-52 h-10 mt-4 rounded-3xl">Copiar</button>      
       </section>
 
       
 
-      <!--       
+            
       </section>
         <div id="animation" class="mr-8 w-52 h-auto" ></div> 
-      <section> -->
+      <section>
       
         
       
