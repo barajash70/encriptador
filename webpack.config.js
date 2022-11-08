@@ -27,7 +27,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|json)$/,
         include: path.resolve(__dirname, "src"),
         use: [
           {

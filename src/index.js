@@ -1,9 +1,7 @@
 import "./css/style.css";
 import "./assets/logo-alura.svg";
-import "./assets/Vector.svg"
-import "./assets/animation_1665196782581.json";
-// import animation from "./assets/lottie.json";
-
+import "./assets/Vector.svg";
+import "./assets/Muñeco.svg"
 
 
 
@@ -11,7 +9,9 @@ const botonEncriptar = document.getElementById("buttonEncriptar");
 const botonDesencriptar = document.getElementById("buttonDesencriptar");
 const mensajeHTML = document.getElementById("mensaje");
 const textoHTML = document.getElementById("texto");
+const imagenMunecoHTML = document.getElementById("imagenMuneco");
 const botonCopiar = document.getElementById("buttonCopy");
+
 
 botonEncriptar.addEventListener("click", () => {
 
@@ -19,46 +19,20 @@ botonEncriptar.addEventListener("click", () => {
 
     let textoArea = inputTexto.value;
 
+    if (textoArea === "") return;
+
+
     let textoEncriptado = encriptar(textoArea);
 
     mensajeHTML.textContent = textoEncriptado;
 
-    textoHTML.classList.add("invisible");
+    textoHTML.classList.add("hidden");
+    imagenMunecoHTML.classList.add("hidden");
 
-
-
-
-    console.dir(botonCopiar);
-
-    // console.log(textoEncriptado);
-
-
-    // console.dir(inputTexto);
-
+    botonCopiar.classList.remove("hidden");
 });
 
-// botonDesencriptar.addEventListener("click", () => {
 
-//     const textoEncriptado = document.querySelector(".input-texto");
-
-//     let mensaje = textoEncriptado.value;
-
-//     let textoLeido = desencriptar(mensaje);
-
-
-
-
-
-//     // console.dir(textoLeido);
-// });
-
-
-
-
-
-
-const buttonCopy = document.querySelector(".buttonCopy");
-// const animation = document.querySelector(".animation");
 
 
 // Las "llaves" de encriptación que utilizaremos son las siguientes:
@@ -70,8 +44,6 @@ const buttonCopy = document.querySelector(".buttonCopy");
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
-
-
     stringEncriptada = stringEncriptada.toLowerCase();
 
     for (let i = 0; i < matrizCodigo.length; i++) {
@@ -82,8 +54,6 @@ function encriptar(stringEncriptada) {
     return stringEncriptada;
 
 }
-
-
 
 function desencriptar(stringDesencriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -98,6 +68,10 @@ function desencriptar(stringDesencriptada) {
     return stringDesencriptada;
 
 }
+
+
+
+
 
 
 
