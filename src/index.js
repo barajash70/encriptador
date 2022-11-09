@@ -32,6 +32,34 @@ botonEncriptar.addEventListener("click", () => {
     botonCopiar.classList.remove("hidden");
 });
 
+botonDesencriptar.addEventListener("click", () => {
+    const inputTexto = document.querySelector(".input-texto");
+    let textoArea = inputTexto.value;
+    if (textoArea === "") return;
+
+    let textoDesencriptado = desencriptar(textoArea);
+    mensajeHTML.textContent = textoDesencriptado;
+
+    textoHTML.classList.add("hidden");
+    imagenMunecoHTML.classList.add("hidden");
+
+    botonCopiar.classList.remove("hidden");
+
+})
+
+function copy() {
+    let copyText = document.querySelector("buttonCopy");
+    copyText.Select();
+    document.navigator.clipboard("copy");
+    alert("Se copio el mensaje");
+    botonCopiar.addEventListener("click");
+}
+
+
+
+
+
+
 
 
 
