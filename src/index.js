@@ -51,6 +51,8 @@ botonDesencriptar.addEventListener("click", () => {
 botonCopiar.addEventListener("click", () => {
     let textoACopiar = mensajeHTML.textContent;
     navigator.clipboard.writeText(textoACopiar);
+
+
 });
 
 
@@ -74,7 +76,7 @@ function encriptar(stringEncriptada) {
     }
     return stringEncriptada;
 
-}
+};
 
 function desencriptar(stringDesencriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -88,7 +90,7 @@ function desencriptar(stringDesencriptada) {
     }
     return stringDesencriptada;
 
-}
+};
 
 
 
