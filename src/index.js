@@ -13,6 +13,7 @@ const imagenMunecoHTML = document.getElementById("imagenMuneco");
 const botonCopiar = document.getElementById("buttonCopy");
 
 
+
 botonEncriptar.addEventListener("click", () => {
 
     const inputTexto = document.querySelector(".input-texto");
