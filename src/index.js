@@ -1,7 +1,7 @@
 import "./css/style.css";
 import "./assets/logo-alura.svg";
 import "./assets/Vector.svg";
-// import "./assets/encryption.json"
+
 
 
 
@@ -13,7 +13,6 @@ const animacionLlaveHTML = document.getElementById("animacionLlave");
 const botonCopiar = document.getElementById("buttonCopy");
 
 
-
 botonEncriptar.addEventListener("click", () => {
 
     const inputTexto = document.querySelector(".input-texto");
@@ -23,9 +22,6 @@ botonEncriptar.addEventListener("click", () => {
     if (textoArea === "") return;
     inputTexto.value = "";
     botonDesencriptar.value = "";
-
-
-
 
     let textoEncriptado = encriptar(textoArea);
 
@@ -60,9 +56,6 @@ botonCopiar.addEventListener("click", () => {
 
 
 });
-
-
-
 
 // Las "llaves" de encriptación que utilizaremos son las siguientes:
 // `La letra "e" es convertida para "enter"`
