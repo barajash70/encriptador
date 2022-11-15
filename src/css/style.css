@@ -6,12 +6,6 @@
 
 html,
 body {
-
-  background-color: white;
-
-
-}
-
-.input-texto::placeholder {
-  color: brown;
+  background-color: rgb(245, 236, 236);
+  background-size: cover;
 }

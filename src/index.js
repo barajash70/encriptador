@@ -1,7 +1,7 @@
 import "./css/style.css";
 import "./assets/logo-alura.svg";
 import "./assets/Vector.svg";
-import "./assets/Muñeco.svg"
+// import "./assets/encryption.json"
 
 
 
@@ -9,7 +9,7 @@ const botonEncriptar = document.getElementById("buttonEncriptar");
 const botonDesencriptar = document.getElementById("buttonDesencriptar");
 const mensajeHTML = document.getElementById("mensaje");
 const textoHTML = document.getElementById("texto");
-const imagenMunecoHTML = document.getElementById("imagenMuneco");
+const animacionLlaveHTML = document.getElementById("animacionLlave");
 const botonCopiar = document.getElementById("buttonCopy");
 
 
@@ -21,6 +21,10 @@ botonEncriptar.addEventListener("click", () => {
     let textoArea = inputTexto.value;
 
     if (textoArea === "") return;
+    inputTexto.value = "";
+    botonDesencriptar.value = "";
+
+
 
 
     let textoEncriptado = encriptar(textoArea);
@@ -28,7 +32,7 @@ botonEncriptar.addEventListener("click", () => {
     mensajeHTML.textContent = textoEncriptado;
 
     textoHTML.classList.add("hidden");
-    imagenMunecoHTML.classList.add("hidden");
+    animacionLlaveHTML.classList.add("hidden");
 
     botonCopiar.classList.remove("hidden");
 
@@ -50,6 +54,7 @@ botonDesencriptar.addEventListener("click", () => {
 });
 
 botonCopiar.addEventListener("click", () => {
+
     let textoACopiar = mensajeHTML.textContent;
     navigator.clipboard.writeText(textoACopiar);
 
